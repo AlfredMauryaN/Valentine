@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine 💘</title>
+    <script>
+        // Get the name parameter from URL if it exists
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        
+        // Redirect to Valentine.html with the name parameter
+        if (name) {
+            window.location.href = './Valentine.html?name=' + encodeURIComponent(name);
+        } else {
+            window.location.href = './Valentine.html';
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
